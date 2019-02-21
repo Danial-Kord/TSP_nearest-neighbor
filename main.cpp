@@ -42,6 +42,7 @@ int main() {
                     if(min_des > new_des){
                         min_des = new_des;
                         (*min) = points[j];
+
                     }
                 }
             }
