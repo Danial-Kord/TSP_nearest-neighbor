@@ -41,15 +41,16 @@ int main() {
                     double new_des = (*curent).des(points[j]);
                     if(min_des > new_des){
                         min_des = new_des;
-                        (*min) = points[j];
+                        min = &points[j];
 
                     }
                 }
             }
             final_res += min_des;
+            cout << "+=  "<<min_des << endl;
             (*min).check = true;
             curent = min;
-            k = 0;
+            k = -1;
         }
     }
     final_res += (*first_point).des((*curent));
